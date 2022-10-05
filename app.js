@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mongoose.connect("mongodb+srv://admin-aadi:Test-1659@cluster0.l8yhchl.mongodb.net/blog-website");
-
+// mongoose.connect('mongodb://localhost:27017/blog-website');
 const blogSchema = new mongoose.Schema({
   title: String,
   content: String,
